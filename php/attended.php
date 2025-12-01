@@ -25,16 +25,43 @@ try {
 <html>
 <head>
     <title>All Attendees</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
     <h1>Attended Table</h1>
     <p1> The list of attendees for each event.</p1>
-    <ul>
-	
-        <?php foreach($attendees as $row): ?>
-            <li><?php echo 'DonorID: ' . $row['DonorID'] . ' | Event: ' . $row['eventName']; ?></li>
+    <table>
+        <tr>
+            <th>DonorID</th>
+            <th>Event Name</th>
+        </tr>
+
+        <?php foreach ($attendees as $row): ?>
+            <tr>
+                <td><?php echo $row['DonorID'] ?? 'NULL'; ?></td>
+                <td><?php echo $row['eventName'] ?? 'NULL'; ?></td>
+            </tr>
         <?php endforeach; ?>
-    </ul>
+    </table>
 	
 	<!-- Add a Back button -->
     <button onclick="window.location.href='index4.php'">Back to Main Menu</button>
