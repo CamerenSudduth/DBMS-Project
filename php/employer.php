@@ -24,7 +24,7 @@ try {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>All Employers</title>
+    <title>All Employer</title>
 
     <style>
         table {
