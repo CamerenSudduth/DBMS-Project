@@ -19,15 +19,15 @@
             display: inline-block;
             text-align: center;
             border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
+            padding: 10px;
+            border-radius: 1px;
         }
     </style>
 </head>
 <body>
 
     <div class="content">
-        <h1>Alpha University System</h1>
+        <img src="Alpha University Transparent Logo.png" alt="Alpha University Transparent Logo" width="300">
 
         <!-- View Attended Table -->
         <button onclick="window.location.href='attended.php'">View Attended Table</button>
