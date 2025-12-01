@@ -65,7 +65,12 @@ try {
             $stmt->bindParam(':donorID', $deleteDonorID);
             $stmt->bindParam(':eventName', $deleteEventName);
             $stmt->execute();
-            $message = "Attendee deleted successfully.";
+
+            if ($stmt->rowCount() > 0) {
+                $message = "Attendee deleted successfully.";
+            } else {
+                $message = "Cannot delete: This attendee does not exist.";
+            }
         }
     }
 
