@@ -47,7 +47,7 @@ try {
 </head>
 
 <body>
-    <h1>ClassifiedBy Table</h1>
+    <h1>DonorCircle Table</h1>
     <p>The list of donor circles and their amount threshold.</p>
 
     <table>
