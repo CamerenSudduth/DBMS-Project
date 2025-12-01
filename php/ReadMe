@@ -1,0 +1,22 @@
+# 📁 PHP Source Files
+
+This directory contains **all of the PHP files** used in this project.
+
+---
+
+## ⚠️ Important Configuration Notice
+
+If you plan on **editing or running any of these files**, you **must update the system connection settings** to match your own environment.
+
+This typically includes (but is not limited to):
+
+- Database host
+- Username
+- Password
+- Database name
+
+Failure to update these values may result in:
+- Connection errors
+- Security issues
+- Application crashes
+---
