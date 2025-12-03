@@ -76,7 +76,7 @@ try {
 
     // Handle search
     if (isset($_POST['searchDonorID']) || isset($_POST['searchEventName'])) {
-        $searchDonorID = trim($_POST['searchDonorID']);
+        $searchDonorID = trim($_POST['searchDonorID'] ?? '');
         $searchEventName = trim($_POST['searchEventName'] ?? '');
     }
 
